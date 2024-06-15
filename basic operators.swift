@@ -16,20 +16,20 @@
 let b = 10
 var a = 5
 
-a = 5
+a = b
 
 let (x, y) = (1, 2)
 
 //Arithmetic operators
 // + - * /
 
-1 + 2
-2 - 1
-2 * 3
-10 / 5
+print(1 + 2)
+print(2 - 1)
+print(2 * 3)
+print(10 / 5)
 
 //Remainder operator
-9 % 4
+print(9 % 4)
 
 //Unary Minus Operator
 let three = 3
@@ -41,8 +41,8 @@ let six = 7
 let plusDesktop = +six
 
 //Compound Assignment Operators
-var a = 1
-a += 2
+var n = 1
+n += 2
 
 /*Comparison Operators
     Equal to (a == b)
@@ -57,9 +57,9 @@ a += 2
 /*
     Tuple comparison
 */
-(1, "zebra") < (2, "apple") //returns true
-(3,"apple") < (3, "bird") //returns true
-(4, "dog") == (4, "dog")
+print((1, "zebra") < (2, "apple")) //returns true
+print((3,"apple") < (3, "bird")) //returns true
+print((4, "dog") == (4, "dog"))
 
 //< compares Booleans
 
@@ -74,12 +74,14 @@ let rowHeight = contentHeight + (hasHeader ? 50 : 20)
     Unwraps an optional a if it contains a value
     or returns a default value b if a is nil
 */
-//Complete version
-a != nil ? a! : b
+
+var age = Int("20")
+
+print("I am " + (age != nil ? String(age!) : "_"))
 
 //Shorthand version
 let defaultColorName = "red"
-var userDefinedcolorName: String? // defaults to nil
+var userDefinedColorName: String? // defaults to nil
 
 var colorNameToUse = userDefinedColorName ?? defaultColorName
 //colorNameToUse returns red
@@ -117,9 +119,9 @@ for name in names[2...] {
 
 let range = ...5
 
-range.contains(7)
-range.contains(4)
-range.contains(-1)
+print(range.contains(7))
+print(range.contains(4))
+print(range.contains(-1))
 
 /*
     Logical Operators modify or combine the Boolean logic
