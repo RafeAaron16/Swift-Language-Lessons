@@ -71,7 +71,7 @@ shoppingList[0] = "Six eggs"
 print("The first item has been changed: \(shoppingList)")
 
 //Subscript operation
-shoppingList[4..6] = ["Bananas", "Apples"]
+shoppingList[4...6] = ["Bananas", "Apples"]
 print("The shopping list has been changed: \(shoppingList)")
 
 //Inseting at a particular index
@@ -182,7 +182,7 @@ airports2["DUB"] = nil
 
 //Iterating over a dictionary
 for (airportCode, airportName) in airports {
-    print("Airport Code: \(airportCode) Name \(airportName)")
+    print("Airport Code: \(airportCode) Name: \(airportName)")
 }
 
 //dict.keys() returns the keys in a dictionary
